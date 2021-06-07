@@ -1,0 +1,146 @@
+1. Faça um programa que leia um valor informado pelo usuário e diga se o valor informado é positivo, negativo ou zero.
+
+import java.util.*;
+
+public class Exercicio1 {
+    public static void main(String[] args) {
+        
+        Scanner scanner =  new Scanner(System.in);
+        
+        System.out.print("Digite um numero: ");
+        int n1 = scanner.nextInt();
+
+        if (n1 == 0 ) {
+            System.out.print("O numero e zero");
+        }
+        else if(n1 < 0) {
+            System.out.print("O numero e negativo");
+        }
+        else {
+            System.out.print("O numero e positivo");
+        }
+    }
+}
+
+
+
+2. Faça um programa para ler 3 valores (considere que não serão informados valores iguais) e escrever o maior deles.
+
+import java.util.*;
+
+public class Exercicio2 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite o primeiro numero:");
+        int n1 = scanner.nextInt();
+        
+        System.out.print("Digite o segundo numero:");
+        int n2 = scanner.nextInt();
+
+        System.out.print("Digite o terceiro numero:");
+        int n3 = scanner.nextInt();
+
+        if(n1 > n2 & n1 > n3){ 
+            System.out.print("O: " + n1 + " e o maior numero");
+        }
+
+        else if(n2 > n1 & n2 > n3){
+            System.out.print("O " + n2 + " e o maior numero");
+        }
+        else {
+            System.out.print("O " + n3 + " e o maior numero");
+        }
+
+    }
+}
+
+
+
+3. Faça um programa que leia 3 valores (considere que não serão informados valores iguais) e escreva a soma dos 2 maiores.
+import java.util.*;
+
+public class Exercicio3 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite o primeiro numero:");
+        int n1 = scanner.nextInt();
+        
+        System.out.print("Digite o segundo numero:");
+        int n2 = scanner.nextInt();
+
+        System.out.print("Digite o terceiro numero:");
+        int n3 = scanner.nextInt();
+
+        if(n1 > n3 & n2 > n3){ 
+            System.out.print("A soma dos dois maiores : " + (n1 + n2));
+        }
+
+        else if(n1 > n2 & n3 > n2){ 
+            System.out.print("A soma dos dois maiores e: " + (n1 + n3));
+        }
+
+        else{ 
+            System.out.print("A soma dos dois maiores e: " + (n2 + n3));
+        }
+}
+}
+
+
+4. Faça um programa que receba dois números reais e mostre um menu de opções (Subtrair, Somar, Multiplicar e Dividir), 
+realizando a operação de acordo com a opção escolhida no menu e mostrando o resultado.
+public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+
+
+        System.out.println("Escolha umas das opçoes: \n" +
+                "1- Soma\n" +
+                "2- Subtracao\n" +
+                "3- Multiplicacao\n" +
+                "4- Divisao");
+        var choice = sc.nextInt();
+
+        switch (choice){
+            case 1:
+                System.out.println("Digite o primeiro numero: ");
+                var n1 = sc.nextInt();
+
+                System.out.println("Digite o segundo número: ");
+                var n2 = sc.nextInt();
+
+                System.out.println("A soma dos numeros: " + (n1 + n2));
+                break;
+
+            case 2:
+                System.out.println("Digite o primeiro número: ");
+                var s1 = sc.nextInt();
+
+                System.out.println("Digite o segundo número: ");
+                var s2 = sc.nextInt();
+
+                System.out.println("A subtracao dos numeros: " + (s1 - s2));
+                break;
+
+            case 3:
+                System.out.println("Digite o prineiro numero: ");
+                var m1 = sc.nextInt();
+
+                System.out.println("Digite o segubndo numero: ");
+                var m2 = sc.nextInt();
+
+                System.out.println("A multipicacao dos numeros: " + (m1 * m2));
+                break;
+
+            case 4:
+                System.out.println("Digite o primeiro numero: ");
+                var d1 = sc.nextInt();
+
+                System.out.println("Digite o segundo numero: ");
+                var d2 = sc.nextInt();
+
+                System.out.println("A divisão dos numeros: " + (d1 / d2));
+                break;
+        }
+    }
