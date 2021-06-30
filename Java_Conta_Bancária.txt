@@ -1,0 +1,659 @@
+alphaDark22
+#1657
+
+OnFire 💤💤🦌 — 07/06/2021
+
+1. Faça um programa que leia um valor informado pelo usuário e diga se o valor informado é positivo, negativo ou zero.
+
+
+
+2. Faça um programa para ler 3 valores (considere que não serão informados valores iguais) e escrever o maior deles.
+
+
+
+3. Faça um programa que leia 3 valores (considere que não serão informados valores iguais) e escreva a soma dos 2 maiores.
+
+
+
+4. Faça um programa que receba dois números reais e mostre um menu de opções (Subtrair, Somar, Multiplicar e Dividir), realizando a operação de acordo com a opção escolhida no menu e mostrando o resultado.
+Erick 🌈 Pai do Java — 07/06/2021
+compileJava.options.encoding("UTF-8")
+Erick 🌈 Pai do Java — 07/06/2021
+ if(n1 > n2 && n1 > n3){
+            System.out.println("O número maior é :" + n1);
+        }
+
+       else if(n2 > n1 && n2 > n3){
+            System.out.println("O número maior é :" + n2);
+        }
+
+        else if( n3 > n2 && n3 > n1){
+            System.out.println("O número maior é :" + n3);
+        }
+Erick 🌈 Pai do Java — 07/06/2021
+int v1 = Math.max(n1 , n2);
+
+        int vfinal = Math.max(v1 , n3);
+
+Onça princeso — 07/06/2021
+to meio tavado aqui na aula
+Onça princeso — 07/06/2021
+*travado
+Erick 🌈 Pai do Java — 07/06/2021
+Ex 4
+  public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+
+
+        System.out.println("Escolha umas das opçoes: \n" +
+                "1- Soma\n" +
+                "2- Subtracao\n" +
+                "3- Multiplicacao\n" +
+                "4- Divisao");
+        var choice = sc.nextInt();
+
+        switch (choice){
+            case 1:
+                System.out.println("Digite o primeiro numero: ");
+                var n1 = sc.nextInt();
+
+                System.out.println("Digite o segundo número: ");
+                var n2 = sc.nextInt();
+
+                System.out.println("A soma dos numeros: " + (n1 + n2));
+                break;
+
+            case 2:
+                System.out.println("Digite o primeiro número: ");
+                var s1 = sc.nextInt();
+
+                System.out.println("Digite o segundo número: ");
+                var s2 = sc.nextInt();
+
+                System.out.println("A subtracao dos numeros: " + (s1 - s2));
+                break;
+
+            case 3:
+                System.out.println("Digite o prineiro numero: ");
+                var m1 = sc.nextInt();
+
+                System.out.println("Digite o segubndo numero: ");
+                var m2 = sc.nextInt();
+
+                System.out.println("A multipicacao dos numeros: " + (m1 * m2));
+                break;
+
+            case 4:
+                System.out.println("Digite o primeiro numero: ");
+                var d1 = sc.nextInt();
+
+                System.out.println("Digite o segundo numero: ");
+                var d2 = sc.nextInt();
+
+                System.out.println("A divisão dos numeros: " + (d1 / d2));
+                break;
+        }
+    }
+Cavalo Calmo🐴 — 07/06/2021
+import java.util.*;
+
+public class Exercicio3 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+Expandir
+Ex3.txt
+1 KB
+import java.util.*;
+
+public class Exercicio2 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+Expandir
+Ex2.txt
+1 KB
+import java.util.*;
+
+public class Exercicio1 {
+    public static void main(String[] args) {
+        
+        Scanner scanner =  new Scanner(System.in);
+Expandir
+Ex1.txt
+1 KB
+Erick 🌈 Pai do Java — 07/06/2021
+Ex 3
+  Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Informe o primeiro número: ");
+       var n1 = scanner.nextInt();
+
+        System.out.println("Informe o segundo número: ");
+        var n2 = scanner.nextInt();
+
+        System.out.println("Informe o terceiro número: ");
+        var n3 = scanner.nextInt();
+
+        if(n1 > n2 && n2 > n1){
+
+            System.out.println( String.format("A soma dos dois maiores e %1$s", (n2 + n1)));
+        }
+
+         else if (n2 > n1 && n3 > n2){
+            System.out.println( String.format("A soma dos dois maiores e %1$s", (n2 + n3)));
+        }
+         else {
+            System.out.println( String.format("A soma dos dois maiores e %1$s", (n1 + n3)));
+        }
+OnFire 💤💤🦌 — 07/06/2021
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Navbar with Header</title>
+Expandir
+index.html
+5 KB
+function test(){
+  var tabsNewAnim = $('#navbarSupportedContent');
+  var selectorNewAnim = $('#navbarSupportedContent').find('li').length;
+  var activeItemNewAnim = tabsNewAnim.find('.active');
+  var activeWidthNewAnimHeight = activeItemNewAnim.innerHeight();
+  var activeWidthNewAnimWidth = activeItemNewAnim.innerWidth();
+Expandir
+script.js
+2 KB
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #fff; /* fallback for old browsers */
+}
+Expandir
+style.css
+4 KB
+
+Erick 🌈 Pai do Java — 07/06/2021
+Ex 1
+ Scanner scanner = new Scanner(System.in);
+
+
+        System.out.println("Digite o valor: ");
+        var n = scanner.nextInt();
+
+
+        if (n < 0) {
+            System.out.println("O valor é negativo");
+        } else if (n > 0) {
+            System.out.println("O valor é positivo");
+        } else if (n == 0) {
+            System.out.println("O valor é 0");
+        }
+Onça princeso — 07/06/2021
+
+OnFire 💤💤🦌 — 07/06/2021
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Navbar with Header</title>
+Expandir
+index.html
+5 KB
+function test(){
+  var tabsNewAnim = $('#navbarSupportedContent');
+  var selectorNewAnim = $('#navbarSupportedContent').find('li').length;
+  var activeItemNewAnim = tabsNewAnim.find('.active');
+  var activeWidthNewAnimHeight = activeItemNewAnim.innerHeight();
+  var activeWidthNewAnimWidth = activeItemNewAnim.innerWidth();
+Expandir
+script.js
+2 KB
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #fff; /* fallback for old browsers */
+}
+Expandir
+style.css
+4 KB
+
+Nunca nem vi — 07/06/2021
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #fff; /* fallback for old browsers */
+}
+Expandir
+style.css
+4 KB
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Navbar with Header</title>
+Expandir
+index.html
+5 KB
+@OnFire 💤💤🦌 .
+OnFire 💤💤🦌 — 07/06/2021
+Tipo de arquivo em anexo: unknown
+Somar.jar
+2.07 KB
+package somar;
+
+import java.util.Scanner;
+
+public class Somar {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Informe o primeiro numero:");
+        int n1 = sc.nextInt();
+
+        System.out.println("Informe o segundo numero:");
+        int n2 = sc.nextInt();
+
+        System.out.println("Informe o terceiro numero:");
+        int n3 = sc.nextInt();
+
+        if(n1>n2 && n2>n1){
+            System.out.println("A soma entre os maiores numeros e:" +(n1+n2));
+        }
+        else if(n2>n1 && n3>n2){
+            System.out.println("A soma entre os maiores numeros e: "+(n2+n3));
+        }
+        else{
+            System.out.println("A soma entre os maiores numeros e"+(n1+n3));
+        }
+
+
+
+    }
+}
+Nunca nem vi — 10/06/2021
+by felipe
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Navbar with Header</title>
+Expandir
+message.txt
+5 KB
+function test(){
+  var tabsNewAnim = $('#navbarSupportedContent');
+  var selectorNewAnim = $('#navbarSupportedContent').find('li').length;
+  var activeItemNewAnim = tabsNewAnim.find('.active');
+  var activeWidthNewAnimHeight = activeItemNewAnim.innerHeight();
+  var activeWidthNewAnimWidth = activeItemNewAnim.innerWidth();
+  var itemPosNewAnimTop = activeItemNewAnim.position();
+  var itemPosNewAnimLeft = activeItemNewAnim.position();
+  $(".hori-selector").css({
+    "top":itemPosNewAnimTop.top + "px", 
+    "left":itemPosNewAnimLeft.left + "px",
+    "height": activeWidthNewAnimHeight + "px",
+    "width": activeWidthNewAnimWidth + "px"
+  });
+  $("#navbarSupportedContent").on("click","li",function(e){
+    $('#navbarSupportedContent ul li').removeClass("active");
+    $(this).addClass('active');
+    var activeWidthNewAnimHeight = $(this).innerHeight();
+    var activeWidthNewAnimWidth = $(this).innerWidth();
+    var itemPosNewAnimTop = $(this).position();
+    var itemPosNewAnimLeft = $(this).position();
+    $(".hori-selector").css({
+      "top":itemPosNewAnimTop.top + "px", 
+      "left":itemPosNewAnimLeft.left + "px",
+      "height": activeWidthNewAnimHeight + "px",
+      "width": activeWidthNewAnimWidth + "px"
+    });
+  });
+}
+$(document).ready(function(){
+  setTimeout(function(){ test(); });
+});
+$(window).on('resize', function(){
+  setTimeout(function(){ test(); }, 500);
+});
+$(".navbar-toggler").click(function(){
+  setTimeout(function(){ test(); });
+});
+by felipe esse e o de cima
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #fff; /* fallback for old browsers */
+}
+Expandir
+message.txt
+5 KB
+Marquinho amiguinho — 10/06/2021
+public class Inicial {
+    public static void main (String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        sc.useLocale(Locale.US);
+
+Expandir
+message.txt
+3 KB
+Erick 🌈 Pai do Java — 10/06/2021
+package proa.java.exercicios;
+
+import java.nio.charset.StandardCharsets;
+import java.util.Locale;
+import java.util.Scanner;
+
+Expandir
+Inicial.java
+4 KB
+Onça princeso — 11/06/2021
+package src;
+
+import java.util.*;
+
+public class cinema {
+	public static void main(String[] args) {
+Expandir
+message.txt
+12 KB
+Nunca nem vi — 12/06/2021
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lucida Sans", sans-serif;
+    color: aliceblue;
+Expandir
+css.css
+1 KB
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="Principal.css" media="screen" />
+    <meta charset="UTF-8">
+Expandir
+40coisas.html
+5 KB
+Marquinho amiguinho — 12/06/2021
+jasb
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="Principal.css" media="screen" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+Expandir
+message.txt
+7 KB
+Erick 🌈 Pai do Java — 14/06/2021
+All Rights Reserved
+
+Copyright (c) ${project.inceptionYear} ${owner}
+
+Created by Techcable
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+Nunca nem vi — 14/06/2021
+.contai{
+  margin-top: 10px;
+}
+
+.fa .fa-github .fa-2x:hover{
+ color: #08b30e;
+}
+
+.btn-block{
+  padding: 0%;
+}
+
+.fa .fa-facebook .fa-2x{
+  padding: 0%;
+}
+
+.fa:hover {
+color: #08b30e;
+}
+
+.fa .fa-facebook .fa-2x:hover{
+background: #1f1d1f;
+color: #1f1d1f;
+}
+
+.btn .btn-lg .btn-block .kpx_btn-github{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.row{
+  padding: 0%;
+}
+
+.col-xs-2{
+  padding: 0%;
+  margin-right: 50px;
+}
+
+.contai{
+  position: relative;
+  right: -20px;
+}
+============================botão de rede social CSS=============================
+<div class="contai">
+                        <div class="row kpx_row-sm-offset-3 kpx_socialButtons">
+                            <div class="col-xs-2 col-sm-2">
+                                <a href="#" class="btn btn-lg btn-block kpx_btn-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                 <i class="fa fa-facebook fa-2x"></i>
+                                <span class="hidden-xs"></span>
+                                </a>
+                            </div>
+
+                            <div class="col-xs-2 col-sm-2">
+                                <a href="#" class="btn btn-lg btn-block kpx_btn-github" data-toggle="tooltip" data-placement="top" title="GitHub">
+                                <i class="fa fa-github fa-2x"></i>
+                                 <span class="hidden-xs"></span>
+                                </a>
+                                </div>
+
+                            <div class="col-xs-2 col-sm-2">
+                                <a href="#" class="btn btn-lg btn-block kpx_btn-google-plus" data-toggle="tooltip" data-placement="top" title="Google Plus">
+                                <i class="fa fa-google-plus fa-2x"></i>
+                                <span class="hidden-xs"></span>
+                                </a>
+                                </div> 
+
+                        </div><br>
+====================Botão de rede social HTML===================================
+Onça princeso — 16/06/2021
+/////////////////////???+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!doctype html>
+Expandir
+message.txt
+15 KB
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.lnr {
+  display: inline-block;
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.05em;
+  stroke-width: 1;
+}
+
+.services-icon {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+bgc2, .vLine, .hLine {
+    background-color: #0F52BA;
+}
+
+.quote-icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.services-icon {
+    font-size: 60px;
+    margin-left: 2rem;
+}
+(interessante considerar como página inicial)
+dps deem uma olhada
+Erick 🌈 Pai do Java — 22/06/2021
+    <c:if test="${param.userNotFound}">
+                    <h1>Usuario não encontrado!</h1>
+                </c:if>
+
+                <c:if test="${param.userLoginSuccess}">
+                    <h1>Logado com sucesso!</h1>
+                </c:if>
+
+                <c:if test="${param.userLoginFail}">
+                    <h1>Senha incorretos!</h1>
+                </c:if>
+
+
+
+                <c:url value="/api/login" var="login_url"/>
+Erick 🌈 Pai do Java — Hoje às 10:42
+package proa.java.exercicios.banco;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Conta conta = new Conta("Erick" , 001, "Bla", 30.0, "Hoje");
+Expandir
+Main.java
+1 KB
+package proa.java.exercicios.banco;
+
+import java.nio.charset.StandardCharsets;
+
+public class Conta {
+
+Expandir
+Conta.java
+3 KB
+﻿
+package proa.java.exercicios.banco;
+
+import java.nio.charset.StandardCharsets;
+
+public class Conta {
+
+    String titular;
+    int conta;
+    String agencia;
+
+    double saldo;
+
+    String creationDate;
+
+    public Conta(String titular, int conta, String agencia, double saldo, String creationDate) {
+        this.titular = titular;
+        this.conta = conta;
+        this.agencia = agencia;
+        this.saldo = saldo;
+        this.creationDate = creationDate;
+    }
+
+    public String getTitular() {
+        return titular;
+    }
+
+    public void setTitular(String titular) {
+        this.titular = titular;
+    }
+
+    public int getConta() {
+        return conta;
+    }
+
+    public void deposito(double depositar){
+        if(depositar > 0) {
+            saldo = saldo + depositar;
+            System.out.println("Deposito efetuado com sucesso!");
+            System.out.print(fixUtf8(String.format("\nSeu saldo é de: %1$s ", saldo)));
+            return;
+        }
+        System.out.print(fixUtf8("\nVocê não pode depositar valores negativos."));
+    }
+
+    public void redimentoMensal(){
+        if(saldo > 0){
+            double calc = (1.0024  * saldo);
+
+            saldo = calc;
+            System.out.println(fixUtf8("\nO rendimento desse mês foi 0.24%, saldo atual: " + saldo));
+        }
+        System.out.print(fixUtf8("\nVocê não tem saldo pra calcular o rendimento."));
+    }
+
+    public void sacar(double retirada){
+        if(retirada > saldo){
+            System.out.print(fixUtf8("\nNão há saldo suficiente na conta."));
+            return;
+        }
+        if(retirada > 0) {
+            saldo = saldo - retirada;
+
+            System.out.println("\nSaque efetuado com sucesso!");
+            System.out.print(fixUtf8(String.format("\nSeu saldo atual é de: %1$s ", saldo)));
+            return;
+        }
+
+        System.out.print(fixUtf8("\nSua conta não foi movimentada."));
+    }
+
+    private static String fixUtf8(String message) {
+        return new String(message.getBytes(StandardCharsets.UTF_8));
+    }
+
+}
+package proa.java.exercicios.banco;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Conta conta = new Conta("Erick" , 001, "Bla", 30.0, "Hoje");
+
+        conta.deposito(100.50);
+
+        conta.sacar(20.40);
+
+        conta.redimentoMensal();
+    }
+}
