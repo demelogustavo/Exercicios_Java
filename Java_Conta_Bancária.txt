@@ -1,24 +1,5 @@
 package proa.java.exercicios.banco;
 
-public class Main {
-
-    public static void main(String[] args) {
-        Conta conta = new Conta("Erick" , 001, "Bla", 30.0, "Hoje");
-Expandir
-Main.java
-1 KB
-package proa.java.exercicios.banco;
-
-import java.nio.charset.StandardCharsets;
-
-public class Conta {
-
-Expandir
-Conta.java
-3 KB
-﻿
-package proa.java.exercicios.banco;
-
 import java.nio.charset.StandardCharsets;
 
 public class Conta {
@@ -107,3 +88,5 @@ public class Main {
         conta.redimentoMensal();
     }
 }
+####
+Nesta atividade acredito merecer conceito 10 , pelo fato de aplicar corretamente os conceitos de P.O.O, Java, UML e conseguir auxiliar meus colegas na mesma.
